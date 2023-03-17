@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="45dp"
+        android:layout_height="28dp"
+        android:backgroundTint="#FFFEFE"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/shopcart"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="54dp"
+        android:layout_height="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/useradmin"
+        android:layout_width="43dp"
+        android:layout_height="28dp"
+        android:backgroundTint="#FFFDFD"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/cart"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/user"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnStartShopping"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.919"
+        app:srcCompat="@drawable/shoppingstart"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/newproduct"
+        android:layout_width="33dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="신상품"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/adview"
+        app:layout_constraintEnd_toStartOf="@+id/like"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="45dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="쓰루추천"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/adview"
+        app:layout_constraintEnd_toStartOf="@+id/event"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="46dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:text="특가/혜택"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/adview"
+        app:layout_constraintEnd_toStartOf="@+id/best"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="베스트"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/adview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/myhome"
+        android:layout_width="58dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FAF8F8"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStartShopping"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.916"
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/set"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#FBFAFA"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toEndOf="@+id/btnStartShopping"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ad"
+        android:layout_width="271dp"
+        android:layout_height="125dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/adview"
+        app:layout_constraintEnd_toEndOf="@+id/adview"
+        app:layout_constraintStart_toStartOf="@+id/adview"
+        app:layout_constraintTop_toTopOf="@+id/adview"
+        app:srcCompat="@drawable/photo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/adview"
+        android:layout_width="350dp"
+        android:layout_height="154dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 특가 할인"
+                android:textColor="@color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcScroll"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="44dp"
+                android:background="#FFD8D8" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mainpage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="52dp"
+                android:background="#DBFFFA" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
